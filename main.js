@@ -1,24 +1,24 @@
-const http = require("http");
+// const http = require("http");
 // const fs = require("fs");
-const fs = require("fs/promises");
+// const fs = require("fs/promises");
 
 
 // 1)
 
-async function dirNameChecker(folderName) {
-  try {
-    const currentFolder = await fs.readdir(__dirname);
-    if (currentFolder.includes(folderName)) {
-      console.log("This folder exist");
-    } else {
-      console.log("This folder does not exist");
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function dirNameChecker(folderName) {
+//   try {
+//     const currentFolder = await fs.readdir(__dirname);
+//     if (currentFolder.includes(folderName)) {
+//       console.log("This folder exist");
+//     } else {
+//       console.log("This folder does not exist");
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-dirNameChecker("main.js");
+// dirNameChecker("main.js");
 
 // 2)
 
